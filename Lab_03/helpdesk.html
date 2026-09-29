@@ -1,0 +1,70 @@
+<h1><strong>Cat Show Registration Page</strong></h1>
+<p>
+    <label>Owner's Name 
+
+    <input type="text" id= "tbName" name="name" maxlength="40" size="20"/>
+    </label>
+    </p>
+<P>
+    <label>Email
+    <input type="email" name="email" maxlength="2" size="15"/>
+    </label>
+    </p>
+<fieldset>
+   <legend>Cat Information Details</legend>
+   <p>
+    <label>Cat's Name
+    <input type=text name="name" maxlength="2" size="10"
+    </label>
+    </p>
+    <p><label>Breed</label></p>
+    <select name="breed" id="breed">
+        <option value="British Shorthair" selected="selected">Bristish Shorthair</option>
+        <option value="Manx">Manx</option>
+        <option value="Ragdoll">Ragdoll</option>
+        <option value="Russian Blue">Russian Blue</option>
+        <option value="Siamese">Siamese</option>
+        <option value="Other">Other</option>        
+        </select>></option>
+    </select>
+    <p>
+  <label>Date of birth
+    <input type="date" name="bday" />
+  </label>
+</p>
+<fieldset>
+    <legend>Sex</legend>
+    <label for="male">Male</label>
+  <input type="radio" id="male" name="sex" value="male">
+  <br><br>
+  <label for="female">female</label>
+  <input type="radio" id="female" name="sex" value="female">
+  <br><br>
+</fieldset>
+<fieldset><legend>Competition Categories</legend>
+<p>Select which categories your would like your cat entered</p>
+
+<p>
+  <label for="breed">Best of Breed</label>
+  <input type="checkbox" id="breed" name="category" value="best_of_breed">
+</p>
+
+<p>
+  <label for="cutest">Cutest</label>
+  <input type="checkbox" id="cutest" name="category" value="cutest">
+</p>
+
+<p>
+  <label for="ugliest">Ugliest</label>
+  <input type="checkbox" id="ugliest" name="category" value="ugliest">
+</p>
+
+</fieldset> 
+    <p><label>Comments<br/>
+<textarea name="comments" rows="4" cols="20"></textarea>
+</label></p>
+</fieldset>
+<p>
+<input type="submit" value="Submit Survey"/>
+<input type="reset" value="Reset" />
+</p>
