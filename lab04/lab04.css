@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333333;
+  line-height: 1.5;
+  margin: 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  color: #800080; 
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.button-nav {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.button-nav button {
+  background-color: #f2f2f2;
+  border: 1px solid #707070;
+  padding: 4px 8px;
+  font-size: 13px;
+  color: #555555;
+  cursor: pointer;
+}
+
+.nav-divider {
+  border: none;
+  border-top: 2px solid #555555;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.italic-note {
+  font-style: italic;
+  color: #555555;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  color: #008080; 
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.red-heading {
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.blue-subheading {
+  color: #4682b4; 
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.highlight {
+  color: #d97724;
+  font-weight: bold;
+}
+
+
+ul, ol {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+.square-list {
+  list-style-type: square; 
+}
+
+
+.styled-table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.styled-table, 
+.styled-table th, 
+.styled-table td {
+  border: 2px solid #555555;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.styled-table th {
+  font-weight: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+.section-title.text-center {
+  text-align: center;
+}
+
+.thumbnail-img {
+  width: 120px;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+body {
+  border-left: 2px solid #4682b4; 
+  padding-left: 15px; 
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
