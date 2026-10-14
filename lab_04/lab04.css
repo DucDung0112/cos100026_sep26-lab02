@@ -29,7 +29,7 @@ body {
   border: 1px solid #707070;
   padding: 4px 8px;
   font-size: 13px;
-  color: #555555;
+  color: #c8c5c5;
   cursor: pointer;
 }
 
@@ -60,20 +60,6 @@ body {
   margin-bottom: 15px;
 }
 
-.red-heading {
-  color: #ff0000;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.blue-subheading {
-  color: #4682b4; 
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 8px;
-}
-
 .highlight {
   color: #d97724;
   font-weight: bold;
@@ -89,8 +75,9 @@ li {
   margin-bottom: 3px;
 }
 
-.square-list {
-  list-style-type: square; 
+ol ul {
+  list-style-
+  type: square; 
 }
 
 
