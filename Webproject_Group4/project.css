@@ -1,0 +1,81 @@
+.header{
+    text-align: left;
+    color:#1a4e86;
+    font-size: 50px;
+    font-family: Georgia, serif;
+    background-color: rgb(168, 231, 254);
+}
+
+.button a {
+    background-color:white;
+    color:#083f79;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-right: 20px;
+    font-size: 18px;
+     float: right;
+}
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid rgb(168, 231, 254);
+    border-radius: 4px;
+}
+.slogan {
+    font-size: 20px;
+    color: #1A365D;
+    text-align: left;
+    background-color: rgb(168, 231, 254);
+    font-family: Garamond, serif;
+}
+.des {
+    font-size: 25px;
+    color: #1A365D;
+    margin-right: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 20px 30px; 
+}
+.hr {
+    border: 2px solid #1A365D;
+    margin: 20px;
+    border-radius: 5px;
+}
+.footer{
+    background-color:white;
+    color:#083f79;
+    font-size: 18px;
+    justify-content: space-around;
+    display: flex;
+    margin-right: 15px
+}
+.search-input {
+    padding: 5px;
+    border: 1px solid #1A365D;
+    border-radius: 6px;
+}
+.image{
+    float: left;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.p{
+    font-size: 18px;
+    color: #1A365D;
+    text-align: left;
+    background-color: rgb(168, 231, 254);
+    font-family: Garamond, serif;
+}
+.h2{
+    color: #1A365D;
+    text-align: left;
+    background-color: rgb(168, 231, 254);
+    font-family:Georgia, serif;
+}
+.main, body {
+    background-color: rgb(168, 231, 254); 
+    margin: 0;
+    min-height: 100vh;
+}

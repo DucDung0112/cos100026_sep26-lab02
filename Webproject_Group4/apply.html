@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apply for a job at LearnBridge Technologies.">
+  <meta name="author" content="LearnBridge Technologies team">
+  <title>Apply | LearnBridge Technologies</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .apply-note { font-size: 0.9em; }
+  </style>
+</head>
+
+
+
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Shared navigation (same on all pages) -->
+<header>
+  <nav aria-label="Main navigation">
+    <ul class="nav-menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+      <li><a href="apply.html">Apply</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <h1>Job Application</h1>
+  
+  <p class="apply-note" style="color: #212529;">All fields are required except &ldquo;Other skills&rdquo;.</p>
+
+  <form class="apply-form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+
+    <div class="field">
+      <label for="ref">Job reference number</label>
+      <input type="text" id="ref" name="ref" pattern="[A-Za-z0-9]{5}" maxlength="5" title="Exactly 5 letters or numbers" required>
+    </div>
+
+    <div class="field">
+      <label for="first">First name</label>
+      <input type="text" id="first" name="first" pattern="[A-Za-z]{1,20}" maxlength="20" title="Up to 20 letters only" required>
+    </div>
+
+    <!-- Last name: max 20 letters -->
+    <div class="field">
+      <label for="last">Last name</label>
+      <input type="text" id="last" name="last" pattern="[A-Za-z]{1,20}" maxlength="20" title="Up to 20 letters only" required>
+    </div>
+
+    <!-- Date of birth: dd/mm/yyyy -->
+    <div class="field">
+      <label for="dob">Date of birth (dd/mm/yyyy)</label>
+      <input type="text" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" title="Format: dd/mm/yyyy" required>
+    </div>
+
+    <!-- Gender: radio buttons grouped by fieldset + legend -->
+    <fieldset class="field">
+      <legend>Gender</legend>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </fieldset>
+
+    <!-- Address: max 40 characters each -->
+    <div class="field">
+      <label for="street">Street address</label>
+      <input type="text" id="street" name="street" maxlength="40" required>
+    </div>
+
+    <div class="field">
+      <label for="suburb">Suburb/Town</label>
+      <input type="text" id="suburb" name="suburb" maxlength="40" required>
+    </div>
+
+    <!-- State: dropdown -->
+    <div class="field">
+      <label for="state">State</label>
+      <select id="state" name="state" required>
+        <option value="">Select a state</option>
+        <option value="VIC">VIC</option>
+        <option value="NSW">NSW</option>
+        <option value="QLD">QLD</option>
+        <option value="NT">NT</option>
+        <option value="WA">WA</option>
+        <option value="SA">SA</option>
+        <option value="TAS">TAS</option>
+        <option value="ACT">ACT</option>
+      </select>
+    </div>
+
+    <!-- Postcode: exactly 4 digits -->
+    <div class="field">
+      <label for="postcode">Postcode</label>
+      <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" maxlength="4" title="Exactly 4 digits" required>
+    </div>
+
+    <!-- Email: type="email" checks the format -->
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- Phone: 8 to 12 digits -->
+    <div class="field">
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" title="8 to 12 digits" required>
+    </div>
+
+    <!-- Skills: checkboxes (all share name="skills") -->
+    <fieldset class="field">
+      <legend>Skills</legend>
+      <input type="checkbox" id="html" name="skills" value="html">
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="skills" value="css">
+      <label for="css">CSS</label>
+      <input type="checkbox" id="design" name="skills" value="design">
+      <label for="design">UX design</label>
+      <input type="checkbox" id="access" name="skills" value="accessibility">
+      <label for="access">Accessibility</label>
+    </fieldset>
+
+    <!-- Other skills: the only optional field -->
+    <div class="field">
+      <label for="other-skills">Other skills</label>
+      <textarea id="other-skills" name="other_skills" rows="4"></textarea>
+    </div>
+
+    <button type="submit">Submit application</button>
+  </form>
+</main>
+
+<!-- Shared footer (same on all pages) -->
+<footer>
+  <p class="ack">We acknowledge the Wurundjeri Woi Wurrung people of the Kulin Nation as Traditional Owners of the land where our team studies and works. We pay respect to Elders past and present.</p>
+  <ul class="footer-links">
+    <li><a href="https://swinburnestudent.atlassian.net/jira/software/projects/WWTP/boards/2">Jira project</a></li>
+    <li><a href="https://github.com/DaoTuanNam29/learnbridge-website">GitHub repository</a></li>
+    <li><a href="https://daotuannam29.github.io/learnbridge-website/">Live site</a></li>
+    <li><a href="mailto:info@learnbridge.com">info@learnbridge.com</a></li>
+  </ul>
+  <p>&copy; 2026 LearnBridge Technologies. AI tools were used to help draft this code (acknowledged for COS10026).</p>
+</footer>
+</body>
+</html>
