@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chúc mừng 20/10</title>
+  <link rel="stylesheet" href="20_10.css">
+</head>
+<body>
+
+<header class="hero">
+  <p class="small">Ngày Phụ nữ Việt Nam</p>
+  <h1>20/10</h1>
+  <p class="subtitle">Chúc bạn/chị <span id="ten-nguoi-nhan"></span> một ngày thật vui và thật xinh đẹp!</p>
+</header>
+<div id="modal-nhap-ten" class="modal-overlay">
+  <div class="modal-box">
+    <h3>Nhập tên người nhận </h3>
+    <input type="text" id="input-name" placeholder="Ví dụ: hmmm..." />
+    <button id="btn-xac-nhan">xác nhận</button>
+  </div>
+</div>
+
+  <main class="container">
+    <section class="message">
+      <h2>Gửi các bạn</h2>
+      <p>
+        Cảm ơn các bạn vì đã luôn ở bên mình, cùng mình cười, cùng mình học và
+        cùng mình vượt qua những ngày mệt mỏi. Hôm nay là ngày của các bạn, hãy
+        thật vui và nhận thật nhiều yêu thương nhé!
+      </p>
+    </section>
+
+    <section class="wishes">
+      <h2>Lời chúc dành cho bạn</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Luôn xinh đẹp</h3>
+          <p>Chúc bạn luôn là chính bản thân mình trong mọi hoàn cảnh và đầu tư HDPE</p>
+        </div>
+        <div class="card">
+          <h3>Thật nhiều niềm vui</h3>
+          <p>Mỗi ngày đều có lý do để b mỉm cười.</p>
+        </div>
+        <div class="card">
+          <h3>Học tập, công việc thuận lợi</h3>
+          <p>Thành công trong cuộc sống và tiền đếm kh xuể</p>
+        </div>
+        <div class="card">
+          <h3>Sức khoẻ dồi dào</h3>
+          <p>Trẻ mãi kh già và luôn tràn đầy năng lượng nhíe.</p>
+        </div>
+            <div class="card">
+          <h3>nhiều ny</h3>
+          <p>zai theo thành đàn, tình đầy tim hehe</p>
+        </div>      
+        <div class="card">
+          <h3>An thuyên</h3>
+          <p>Bản Lĩnh Bình Tĩnh Hà Tĩnh!!!!!    </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Chúc mừng 20/10 nhíeee! Từ một người bạn bí ẩn</p>
+  </footer>
+
+</body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("modal-nhap-ten");
+    const btnXacNhan = document.getElementById("btn-xac-nhan");
+    const inputName = document.getElementById("input-name");
+    const tenNguoiNhanSpan = document.getElementById("ten-nguoi-nhan");
+
+    btnXacNhan.addEventListener("click", function() {
+      let ten = inputName.value.trim();
+      if (ten !== "") {
+        tenNguoiNhanSpan.textContent = ten;
+      }
+      // Ẩn modal đi sau khi xác nhận
+      modal.style.display = "none";
+    });
+  });
+</script>

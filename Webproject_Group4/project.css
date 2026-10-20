@@ -3,7 +3,7 @@
     color:#1a4e86;
     font-size: 50px;
     font-family: Georgia, serif;
-    background-color: rgb(168, 231, 254);
+    background-color:rgb(168, 231, 254);
 }
 
 .button a {
@@ -13,15 +13,19 @@
     border-radius: 25px;
     margin-right: 20px;
     font-size: 18px;
-     float: right;
+    float: right;
 }
 .search-container {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 20px;
     padding: 5px;
-    border: 1px solid rgb(168, 231, 254);
-    border-radius: 4px;
+    color: rgb(168, 231, 254) ;
+}
+.search-input {
+    padding: 5px;
+    border: 1px solid #1A365D;
+    border-radius: 6px;
+    color: #1A365D;
 }
 .slogan {
     font-size: 20px;
@@ -35,31 +39,35 @@
     color: #1A365D;
     margin-right: 20px;
     background-color: white;
-    text-align: center;
-    padding: 20px 30px; 
+    text-align: left;
+    border: 20px rgb(168, 231, 254);
+    padding:30px;
 }
 .hr {
     border: 2px solid #1A365D;
     margin: 20px;
     border-radius: 5px;
 }
-.footer{
-    background-color:white;
-    color:#083f79;
+.footer a{
+    background-color:#1A365D;
+    color:white;
     font-size: 18px;
-    justify-content: space-around;
+    border: 20px solid #1A365D;
+}
+.footer{
+    justify-content: space-evenly;
     display: flex;
-    margin-right: 15px
+    border: 20px solid #1A365D;
+    background-color:#1A365D;
+   
+
 }
-.search-input {
-    padding: 5px;
-    border: 1px solid #1A365D;
-    border-radius: 6px;
-}
+
 .image{
     float: left;
     margin-right: 20px;
-    border-radius: 25px;
+    border-radius: 50px;
+    padding:30px
 }
 .p{
     font-size: 18px;
@@ -74,8 +82,6 @@
     background-color: rgb(168, 231, 254);
     font-family:Georgia, serif;
 }
-.main, body {
-    background-color: rgb(168, 231, 254); 
-    margin: 0;
-    min-height: 100vh;
+.main,body{
+    background-color: rgb(168, 231, 254);
 }
